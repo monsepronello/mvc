@@ -1,0 +1,60 @@
+class VistaAgenda:
+    def mostrar_menu_principal(self):
+
+        print("Bienvenido a la agenda")
+
+        print("1. Buscar un contacto")
+        print("2. Listar contactos")
+        print("3. Agendar un contacto")
+        print('4.Salir')
+
+
+    def validar_entero(self, lim_inf, lim_sup):
+        while True:
+            try:
+                choice = int(input(f'Ingrese una opción entre {lim_inf} y {lim_sup}\n'))
+            except ValueError:
+                print('Opción inválida. Intente nuevamente:')
+                continue
+            else:
+                if choice < lim_inf or choice > lim_sup:
+                    print('Opción inválida. Intente de nuevo:')
+                    continue
+                else:
+                    return choice
+
+    def soliape(self):
+        print('Ingrese el apellido del contacto:')
+        apellido = input()
+        return apellido
+    def borrar(self):
+        print ('desea borrar un contacto? ingrese el nombre')
+        nombree=input()
+        return nombree
+    def solinombre(self ):
+        print('Ingrese el nombre del contacto:')
+        nombre = input()
+        return nombre
+    def solinum(self ):
+        print('Ingrese el numero del contacto:')
+        numero = input()
+        return numero
+    def mostrarnumero(self, numero):
+        print(f' numero: {numero}')
+    def mostrarnombre(self, nombre):
+        print(f' nombre: {nombre}')
+    def mostrarapellido(self, apellido):
+        print(f' apellido: {apellido}')
+    def exito(self):
+        print('cargado con exito')
+    def decoracion(self):
+        print('<3<3<3----------------<3<3<3')
+
+
+
+
+
+
+
+
+
